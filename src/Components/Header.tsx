@@ -4,9 +4,8 @@ import { BsChevronDown } from 'react-icons/bs';
 import profilepic from '../assets/dummyprofilepic.jpg';
 
 const Header = () => {
-  /* fsfsdfd */
   return (
-    <div className='flex items-center justify-between px-[75px] h-[110px] mb-[-110px] z-80 relative w-full'>
+    <div className='flex items-center justify-between px-[75px] h-[110px] mb-[-110px] w-full relative ' style={{zIndex: 80}}>
       <div className='text-3xl font-extrabold text-white'>
         <h2> Movixx</h2>
       </div>
@@ -22,7 +21,7 @@ const Header = () => {
         <GoSearch style={{ fontSize: 24 }} />
         <HiOutlineBell style={{ fontSize: 24 }} />
         <div className='flex items-center gap-2'>
-          <img src={profilepic} className='object-cover object-top w-8 h-8 rounded-full' alt=''/>
+          <img src={profilepic} className='object-cover object-top w-8 h-8 rounded-full' alt='' />
           <BsChevronDown />
         </div>
       </div>
