@@ -10,7 +10,7 @@ const JustReleasedCard = ({ item }: JustReleasedProps) => {
   const { title, poster_path, vote_average } = item;
 
   return (
-    <div className='relative cursor-pointer '>
+    <div className='relative cursor-pointer'>
       <div className='bg-gradient-to-t from-[#0D0C0F]  absolute w-full h-full'></div>
       <img
         src={`https://image.tmdb.org/t/p/w300/${poster_path}`}

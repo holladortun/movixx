@@ -14,10 +14,11 @@ const GenreCard = ({ item }: GenreCardProps) => {
   const { id, name, imageUrl } = item;
   const [isClicked, setIsClicked] = useState(false);
   const setGenreState = useSetRecoilState(genreState);
+  /*   const setTrailerId = useSetRecoilState(trailerState); */
 
   return (
     <div
-      className='relative flex flex-col items-center mb-8 text-white cursor-pointe '
+      className='relative flex flex-col items-center mb-8 text-white cursor-pointer '
       onClick={() => {
         setGenreState(id);
         setIsClicked(!isClicked);

@@ -9,12 +9,35 @@
   }
 }
 
+@layer components {
+  .btn-solid {
+    @apply bg-green p-3 px-6 rounded-[10px] text-white font-bold text-[14px] leading-[22px];
+  }
+  .btn-outline {
+    @apply bg-transparent p-3 px-6 rounded-[8px] text-white border-2 border-white;
+  }
+}
 
-@layer components{
-    .btn-solid {
-        @apply bg-green p-3 px-6 rounded-[10px] text-white font-bold text-[14px] leading-[22px];
-    }
-    .btn-outline {
-        @apply bg-transparent p-3 px-6 rounded-[8px] text-white border-2 border-white;
-    }
+.no-scroll {
+  overflow: hidden;
+}
+
+.popup::-webkit-scrollbar {
+  display: none; /* For Chrome and Safari */
+}
+
+.popup {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* styling for react-tooltip*/
+:root {
+  --rt-color-white: #fff;
+  --rt-color-dark: #000000;
+  --rt-color-success: #8dc572;
+  --rt-color-error: #be6464;
+  --rt-color-warning: #f0ad4e;
+  --rt-color-info: #337ab7;
+  --rt-opacity: 1;
 }

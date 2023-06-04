@@ -4,5 +4,5 @@ import { atom } from 'recoil';
 
 export const genreState = atom<string>({
   key: 'genreState',
-  default: '16',
+  default: '28',
 });

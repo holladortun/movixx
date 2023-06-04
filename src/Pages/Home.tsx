@@ -10,7 +10,6 @@ const Home = () => {
       <Header />
       <HeroSlider />
       <JustReleasedList />
-      <JustReleasedList />
       <PopularMoviesList />
       <ExploreByGenre />
     </div>
