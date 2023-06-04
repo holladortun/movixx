@@ -41,3 +41,8 @@
   --rt-color-info: #337ab7;
   --rt-opacity: 1;
 }
+
+.react-multi-carousel-list {
+
+  overflow: visible;
+}

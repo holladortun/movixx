@@ -34,7 +34,7 @@ const TrailerPopUp = React.memo(() => {
         <>
           <PopUpOverlay />
           <div
-            className=' top-[5%] z-[10000] left-[50%] w-[950px] ml-[-425px] fixed  bg-black popup h-[1000px] overflow-scroll'
+            className=' top-[5%] z-[10000] left-[50%] w-[950px] ml-[-425px] fixed  bg-black popup h-[1200px] overflow-scroll '
             id='popup'
           >
             <ReactPlayer
@@ -123,7 +123,7 @@ const TrailerPopUp = React.memo(() => {
                     </div>
                   </div>
                 </div>
-                <div className='mt-16 '>
+                <div className='mt-16 pb-[70%] '>
                   <h3 className='text-2xl font-bold text-white'>Similar to This</h3>
                   <div className='grid grid-cols-3 gap-4 mt-8 text-white'>
                     {similarMovies?.length < 1 ? (
@@ -135,6 +135,7 @@ const TrailerPopUp = React.memo(() => {
                     )}
                   </div>
                 </div>
+               
               </div>
             </div>
           </div>

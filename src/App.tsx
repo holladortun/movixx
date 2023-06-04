@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 
 function App() {
   return (
-    <div className='h-[7000px] bg-dark font-rubik'>
+    <div className='h-[7000px] bg-dark font-rubik overflow-hidden'>
       <TrailerPopUp />
       <Home/>
     </div>
