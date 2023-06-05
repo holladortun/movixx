@@ -9,7 +9,7 @@ import { movieState } from '../atoms/movieAtom';
 import { trailerPopUpState } from '../atoms/trailerPopUpAtom';
 
 const MovieMoreInfo = ({ movieDetails }: any) => {
-      const { backdrop_path, runtime, id } = movieDetails;
+      const {  runtime, id } = movieDetails;
       const setMovieId = useSetRecoilState(movieState);
       const setIsOpen = useSetRecoilState(trailerPopUpState);
 
@@ -23,6 +23,7 @@ const MovieMoreInfo = ({ movieDetails }: any) => {
         url={`https://www.youtube.com/watch?v=${videoTrailer?.key}`}
         playing
         loop
+        muted
         width={'100%'}
         height={200}
         style={{ borderRadius: 12, zIndex: 1000, marginTop: 10 }}

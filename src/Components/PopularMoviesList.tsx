@@ -33,7 +33,7 @@ const PopularMoviesList = () => {
   return (
     <div className='pl-[75px] py-10 '>
       <h2 className='text-white font-bold text-[24px] mb-6'>Popular this Week</h2>
-      <Carousel responsive={responsive} className='bg-gradient-l'>
+      <Carousel responsive={responsive}>
         {popularMovies.slice(0, 10).map((item: Movie, index: number) => {
           return <PopularMovieCard key={item.id} item={item} index={index + 1} />;
         })}

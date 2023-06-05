@@ -3,7 +3,7 @@ import JustReleasedCard from './JustReleasedCard';
 import Carousel from 'react-multi-carousel';
 import useNowPlaying from '../swr/useNowPlaying';
 import { Movie } from '../models/movies';
-import MovieMoreInfo from './MovieMoreInfo';
+
 
 const responsive = {
   superLargeDesktop: {

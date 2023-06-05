@@ -1,4 +1,3 @@
-import React from 'react';
 
 const convertMinutesToHours = (minutes: number) => {
   const hours = Math.floor(minutes / 60);
@@ -10,7 +9,7 @@ const convertMinutesToHours = (minutes: number) => {
 const RuntimeConverter = ({ minutes }: any) => {
   const runTime = convertMinutesToHours(minutes);
 
-  return <div className='text-white/80'>{runTime}</div>;
+  return <div className='text-[12px] text-white/80'>{runTime}</div>;
 };
 
 export default RuntimeConverter;

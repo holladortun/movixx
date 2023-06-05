@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { useState } from 'react';
 import { Movie } from '../models/movies';
-import ratingstar from '../assets/star.svg';
+
 import MovieMoreInfo from './MovieMoreInfo';
-import useTrailers from '../swr/useTrailers';
+
 import useMovieDetails from '../swr/useMovieDetails';
 
 interface JustReleasedProps {
@@ -12,14 +12,14 @@ interface JustReleasedProps {
 
 const JustReleasedCard = ({ item }: JustReleasedProps) => {
   const [isHovered, setIsHovered] = useState(false);
-  const { title, poster_path, vote_average, id } = item;
+  const { poster_path, id } = item;
   const { data: movieDetails, isLoading } = useMovieDetails(id);
 
   if (isLoading) {
     return <p>Loading...</p>;
   }
 
- /*  const handleIsHovered = ()=> */
+  /*  const handleIsHovered = ()=> */
 
   return (
     <>
