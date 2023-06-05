@@ -31,7 +31,7 @@ const PopularMoviesList = () => {
     return <p>Loading...</p>;
   }
   return (
-    <div className='pl-[75px] py-10 '>
+    <div className='xl:pl-[75px] py-10 pl-5 '>
       <h2 className='text-white font-bold text-[24px] mb-6'>Popular this Week</h2>
       <Carousel responsive={responsive}>
         {popularMovies.slice(0, 10).map((item: Movie, index: number) => {

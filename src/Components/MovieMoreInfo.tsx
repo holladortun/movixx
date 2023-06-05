@@ -17,7 +17,7 @@ const MovieMoreInfo = ({ movieDetails }: any) => {
   const videoTrailer = trailer?.find((item: any) => item.type === 'Trailer');
 
   return (
-    <div className='bg-black w-full  shadow-xl rounded-lg  scale-150 fixed top-0 z-[10000] origin-top-right'>
+    <div className='bg-black w-full  shadow-xl rounded-lg  scale-150 fixed top-0 z-[10000] origin-top-right hidden xl:block'>
       {/* <img src={`https://image.tmdb.org/t/p/w300/${backdrop_path}`} alt='' /> */}
       <ReactPlayer
         url={`https://www.youtube.com/watch?v=${videoTrailer?.key}`}

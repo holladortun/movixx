@@ -43,7 +43,7 @@ const ExploreByGenreSlider = () => {
   return (
     <div>
      
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} autoPlay autoPlaySpeed={5000}>
         {data.map((item: any) => {
           return (
             <div

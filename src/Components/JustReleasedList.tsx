@@ -33,7 +33,7 @@ const JustReleasedList = () => {
   }
 
   return (
-    <div className='pl-[75px] py-10'>
+    <div className='xl:pl-[75px] py-10 pl-5'>
       <h2 className='text-white font-bold text-[24px] mb-6'>Just Released</h2>
 
       {
